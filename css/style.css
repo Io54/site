@@ -111,8 +111,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body.switchMode {
@@ -123,6 +123,38 @@ header {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+.phone {
+  padding: 0 0 5px 0;
+}
+
+.email {
+  padding: 0 0 5px 0;
+}
+
+.info {
+  margin: 10px 0px 0px 0px;
+}
+
+body.switchMode .adress {
+  color: #dfdede;
+}
+
+body.switchMode .email a {
+  color: #dfdede;
+}
+
+body.switchMode .phone a {
+  color: #dfdede;
+}
+
+.info a {
+  color: #333;
+}
+
+.adress {
+  color: #333;
 }
 
 .header__head {
@@ -151,12 +183,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-align-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .head__inner .logo {
@@ -176,8 +208,8 @@ header {
   display: flex;
   -ms-align-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .head__inner nav ul li {
@@ -234,12 +266,12 @@ body.switchMode .head__inner nav ul li.switch a:after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-align-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -300,13 +332,9 @@ body.switchMode .section__title {
   margin: 120px 0px 0px 0px;
 }
 
-.about__text {
-  margin: 0px 10px 0px 0px;
-}
-
 .about__text p {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 17px;
+  margin: 0px 10px 25px 0px;
 }
 
 body.switchMode .about__text p {
@@ -318,11 +346,11 @@ body.switchMode .about__text p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sertificate img {
@@ -340,22 +368,28 @@ body.switchMode .sertificate img {
 
 .name0 {
   margin: 0px 0px 10px 0px;
+  font-size: 18px;
 }
 
 .name {
-  color: #f83b3a;
+  color: #000;
   padding: 5px 0;
 }
 
 .name2 {
-  padding: 0 0 5px 0;
+  padding: 5px 0 5px 0;
+  color: #f83b3a;
+  text-transform: uppercase;
 }
 
 .name3 {
   border-bottom: 1px solid #000;
+  padding: 5px 0 5px 0;
+  margin: 0px 0px 20px 0px;
+  font-size: 14px;
 }
 
-body.switchMode .name2 {
+body.switchMode .name {
   color: #fff;
 }
 
@@ -384,11 +418,11 @@ footer p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 0;
   margin: 0 35px 0 0;
 }
@@ -404,15 +438,15 @@ footer p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 140px;
   height: 120px;
   -webkit-transform: skewX(-30deg);
-  transform: skewX(-30deg);
+          transform: skewX(-30deg);
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, #000), color-stop(50%, #f83b3a));
   background: linear-gradient(to left, #000 50%, #f83b3a 50%);
   background-size: 210%;
@@ -422,7 +456,7 @@ footer p {
 
 .nav__link {
   -webkit-transform: skewX(30deg);
-  transform: skewX(30deg);
+          transform: skewX(30deg);
   color: #000;
   font-size: 50px;
   -webkit-transition: 0.4s;
